@@ -41,6 +41,8 @@ class Dice:
 
 
 
+
+
 die = Dice()
 
 """Dice game"""
@@ -58,6 +60,15 @@ while diceOn == True:
         diceOn = False
     else:
         print("not enough dice")
+    print("would you like to roll again? y or n")
+    response = input(">> ")
+    response.lower()
+    if response == 'y':
+        continue
+    elif response == 'n':
+        break
+    else:
+        print("That's not a valid response")
 print("Thanks for playing")
 
 
